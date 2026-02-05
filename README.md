@@ -1,27 +1,43 @@
-[README.md](https://github.com/user-attachments/files/25097339/README.md)
+[README (1).md](https://github.com/user-attachments/files/25097397/README.1.md)
 # 🔍 Ultimate Recon Framework
 
-Ultimate Recon Framework is an automated reconnaissance tool designed for Bug Bounty Hunters and Security Researchers.
-It performs full recon on a target domain and generates a clean, organized HTML report automatically.
+> **Ultimate Recon Framework** is a powerful and automated reconnaissance tool built for  
+> **Bug Bounty Hunters & Security Researchers**.  
+> It performs full recon on a target domain and generates a **clean, professional HTML report** automatically.
+
+---
+
+## 📌 What This Tool Does
+
+✔ Enumerates subdomains  
+✔ Detects live hosts  
+✔ Scans for vulnerabilities  
+✔ Collects archived URLs  
+✔ Builds a beautiful HTML dashboard  
+
+All in **one command**.
 
 ---
 
 ## ✨ Features
 
-- Subdomain Enumeration (subfinder)
-- Live Host Detection (httpx)
-- Vulnerability Scanning (nuclei)
-- Wayback URL Harvesting
-- Parameterized URL Extraction
-- Automatic HTML Report Generation
-- Clean Dark UI Dashboard
-- Organized output structure
-- Fully compatible with Kali Linux
+- 🌐 Subdomain Enumeration (**subfinder**)
+- ⚡ Live Host Detection (**httpx**)
+- 🧨 Vulnerability Scanning (**nuclei**)
+- 🕰 Wayback URL Harvesting
+- 🔍 Parameter-based URL filtering
+- 📊 Automatic HTML Report
+- 🎨 Dark & Clean UI
+- 🗂 Organized output per target
+- 🐧 Optimized for Kali Linux
 
 ---
 
-## 📁 Output Structure
+## 📂 Output Structure
 
+After scanning a target, results are saved like this:
+
+```
 recon_example.com/
 ├── subdomains/
 │   ├── all.txt
@@ -34,71 +50,114 @@ recon_example.com/
 ├── meta/
 │   └── info.txt
 └── report.html
+```
 
 ---
 
 ## 🛠 Requirements
 
 - Kali Linux (Recommended)
-- bash
-- git
-- curl
+- Bash
+- Git
+- Curl
+
+### Security Tools
 - subfinder
 - httpx
 - nuclei
 
 ---
 
-## 🚀 Installation
+## 🚀 Installation Guide
 
-### Clone the repository
+### 1️⃣ Clone the Repository
 
+```bash
 git clone https://github.com/AboudAdmin/ultimate_recon.git
 cd ultimate_recon
-
-### Give execute permission
-
-chmod +x ultimate-recon.sh
+```
 
 ---
 
-## 📦 Install Dependencies (Kali Linux)
+### 2️⃣ Give Execute Permission
 
+```bash
+chmod +x ultimate-recon.sh
+```
+
+---
+
+### 3️⃣ Install Dependencies (Kali Linux)
+
+```bash
 sudo apt update
 sudo apt install -y git curl subfinder httpx nuclei
+```
 
-Update nuclei templates:
+Update nuclei templates (first time only):
 
+```bash
 nuclei -update-templates
+```
 
 ---
 
-## ▶️ Usage
+## ▶️ How to Run the Tool
 
+Start the tool:
+
+```bash
 ./ultimate-recon.sh
+```
 
-Enter target domain when prompted:
+Enter the target domain when asked:
 
+```
 example.com
+```
 
 ---
 
-## 📊 View HTML Report
+## 📊 View the HTML Report
 
+Once the scan finishes:
+
+```bash
 xdg-open recon_example.com/report.html
+```
+
+Or open it in Firefox:
+
+```bash
+firefox recon_example.com/report.html
+```
 
 ---
 
 ## ⚠️ Disclaimer
 
-This tool is intended for educational purposes and authorized security testing only.
-Do NOT use it against systems without explicit permission.
+This tool is created **for educational purposes and authorized testing only**.  
+Running it against systems without permission is **illegal**.
+
+The author is **not responsible** for any misuse.
 
 ---
 
 ## 👨‍💻 Author
 
-Abdullah (AboudAdmin)
-https://github.com/AboudAdmin
+**Abdullah (AboudAdmin)**  
+Bug Bounty Hunter | Security Researcher  
+
+GitHub: https://github.com/AboudAdmin
+
+---
+
+## ⭐ Support the Project
+
+If you like this tool:
+
+- ⭐ Star the repository
+- 🍴 Fork it
+- 📢 Share it with others
 
 Happy Hunting 🎯
