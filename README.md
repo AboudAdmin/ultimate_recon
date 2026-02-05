@@ -52,7 +52,7 @@ go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
 
 1. Clone or download the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/AboudAdmin/ultimate_recon.git
 cd ultimate_recon
 ```
 
