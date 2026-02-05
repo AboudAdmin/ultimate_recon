@@ -1,3 +1,6 @@
+[README.md](https://github.com/user-attachments/files/25102313/README.md)
+<<<<<<< HEAD
+=======
 [README.md](https://github.com/user-attachments/files/25102249/README.md)
 <<<<<<< HEAD
 =======
@@ -108,6 +111,7 @@ chmod +x ultimate-recon.sh
 
 ## 📁 Output Structure
 =======
+>>>>>>> 30f2c31b38a81bc6d931496adb9720f64d88bafd
 [README (1).md](https://github.com/user-attachments/files/25097397/README.1.md)
 >>>>>>> 20fb5ff2941c17b3b04924a0ef2f159d593b2e1c
 # 🔍 Ultimate Recon Framework
@@ -170,138 +174,10 @@ All in **one command**. All results organized and ready for analysis.
 **Required Tools:**
 =======
 After scanning a target, results are saved like this:
->>>>>>> 05030069d46880fa6041802fbd4d6059e017213c
 
 ```
 recon_example.com/
 ├── subdomains/
-<<<<<<< HEAD
-│   ├── all.txt              # All discovered subdomains
-│   └── live.txt             # Active HTTP/HTTPS hosts
-├── urls/
-│   ├── wayback_all.txt      # All Wayback Machine URLs
-│   └── wayback_params.txt   # URLs with parameters
-├── nuclei/
-│   └── results.txt          # Vulnerability findings
-├── logs/
-│   ├── scan.log             # Main execution log
-│   └── errors.log           # Error tracking
-├── meta/
-│   └── info.txt             # Scan metadata
-└── report.html              # Interactive HTML report
-```
-
-## 📊 HTML Report Features
-
-- **📈 Statistics Dashboard** - Quick overview of scan results
-- **🎨 Modern Dark Theme** - Professional and easy on the eyes
-- **📱 Responsive Design** - Works on desktop, tablet, and mobile
-- **🔽 Collapsible Sections** - Clean navigation through large datasets
-- **⏱️ Detailed Metadata** - Scan timeline, duration, and tool versions
-- **🎯 Severity Color Coding** - Quick identification of critical findings
-
-## 🔧 Workflow
-
-1. **Subdomain Enumeration** - Uses subfinder to discover subdomains
-2. **Live Host Probing** - Uses httpx to identify active hosts
-3. **Vulnerability Scanning** - Uses nuclei for security assessment (optional)
-4. **Historical URL Discovery** - Fetches URLs from Wayback Machine
-5. **Report Generation** - Creates comprehensive HTML report
-
-## 📝 Logging
-
-All scans generate detailed logs:
-
-- **`logs/scan.log`** - Timestamped log of all operations
-- **`logs/errors.log`** - Dedicated error tracking for debugging
-
-Example log entry:
-```
-[2026-02-05 16:52:20] [INFO] Starting reconnaissance on example.com
-[2026-02-05 16:52:35] [SUCCESS] Found 42 subdomains
-[2026-02-05 16:53:10] [INFO] Found 28 live hosts
-```
-
-## 🎯 Best Practices
-
-1. **Start with default settings** for your first scan
-2. **Use quiet mode (`-q`)** when integrating with other tools
-3. **Adjust threads (`-t`)** based on your network connection
-4. **Skip Nuclei (`--no-nuclei`)** for quick passive reconnaissance
-5. **Review `errors.log`** if scans fail or produce unexpected results
-
-## ⚠️ Important Notes
-
-- **Permissions Required**: Ensure you have authorization to scan the target domain
-- **Rate Limiting**: Nuclei includes built-in rate limiting (150 req/s) to prevent issues
-- **Network Requirements**: Requires stable internet connection for external API calls
-- **Tool Versions**: Keep tools updated for best results
-
-## 🔮 Future Phases
-
-### Phase 2: Advanced Recon (Planned)
-- Historical URL collection using gau and waybackurls
-- JavaScript file extraction and secret discovery
-- Technology detection and WAF identification
-- DNS record enumeration
-- Port scanning with naabu
-
-### Phase 3: Framework-Level (Planned)
-- Resume capability for interrupted scans
-- JSON and Markdown export formats
-- Screenshot capture
-- Subdomain takeover detection
-- Progress bars and ETA calculations
-
-## 🐛 Troubleshooting
-
-### "Missing required tool" error
-Install the missing tool using the suggested command in the error message.
-
-### Nuclei scan fails
-Check `logs/errors.log` for details. Common issues:
-- Network connectivity
-- Rate limiting by target
-- Outdated nuclei templates (run `nuclei -update-templates`)
-
-### No subdomains found
-- Verify domain spelling
-- Check if domain has public DNS records
-- Review `logs/errors.log` for API errors
-
-### HTML report doesn't open
-Ensure the scan completed successfully. Check for file permissions issues.
-
-## 📄 License
-
-MIT License - See LICENSE file for details
-
-## 🤝 Contributing
-
-This is a phased development project. Phase 1 is focused on stability and core features.
-Feedback and suggestions for future phases are welcome!
-
-## ⚡ Quick Start Checklist
-
-- [ ] Install required tools (subfinder, httpx)
-- [ ] Install optional tools (nuclei)
-- [ ] Make script executable (`chmod +x`)
-- [ ] Run help command to verify (`./ultimate-recon.sh -h`)
-- [ ] Test with a domain you own
-- [ ] Review the HTML report
-- [ ] Check the logs directory
-
-## 📞 Support
-
-For issues, questions, or feature requests:
-1. Check the troubleshooting section
-2. Review `logs/errors.log` for error details
-3. Open an issue with details about your environment
-
----
-
-**Made with ❤️ for the bug bounty and security research community**
-=======
 │   ├── all.txt
 │   └── live.txt
 ├── urls/
@@ -316,15 +192,20 @@ For issues, questions, or feature requests:
 
 ---
 
-## 🛠 Requirements
+## 🛠 System Requirements
 
-- Kali Linux (Recommended)
-- Bash
-- Git
-- Curl
+**Operating System:**
+- ✅ Kali Linux (Recommended)
+- ✅ Ubuntu / Debian
+- ✅ Parrot OS
+- ✅ Any Linux distribution with Bash 5.0+
 
+<<<<<<< HEAD
+**Required Tools:**
+=======
 ### Security Tools
 >>>>>>> 20fb5ff2941c17b3b04924a0ef2f159d593b2e1c
+>>>>>>> 30f2c31b38a81bc6d931496adb9720f64d88bafd
 - subfinder
 - httpx
 - curl
@@ -637,5 +518,8 @@ MIT License - See [LICENSE](LICENSE) file for details
 **Happy Hunting! 🎯**
 =======
 Happy Hunting 🎯
+<<<<<<< HEAD
+=======
 >>>>>>> 05030069d46880fa6041802fbd4d6059e017213c
 >>>>>>> 20fb5ff2941c17b3b04924a0ef2f159d593b2e1c
+>>>>>>> 30f2c31b38a81bc6d931496adb9720f64d88bafd
